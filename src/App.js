@@ -1,8 +1,13 @@
 import React from 'react';
-import Portfolio from './components/Portfolio';
-import Nav from './components/Nav';
 import Home from './components/Home';
+import Nav from './components/Nav';
+import AboutMe from './components/AboutMe';
+import WhatIDo from './components/WhatIDo';
+import Skills from './components/Skills';
+// import Experience from './components/Experience';
+import Portfolio from './components/Portfolio';
 import Testimonial from './components/Testimonials';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
@@ -13,13 +18,17 @@ function App() {
         <Home />
       </header>
       <main>
+        <AboutMe />
+        <WhatIDo />
+        <Skills />
+        {/* <Experience /> */}
         <Portfolio />
-        <section className="testimonial">
-          <Testimonial />
-        </section>
+        <Testimonial />
+        <Contact />
       </main>
       <footer>
-        <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Sarafa Abbas</p>
+        <p>All rights reserved.</p>
       </footer>
     </div>
   );
