@@ -53,7 +53,9 @@ body{
 .whatIDoInner,
 .skillsInner,
 .experienceInner,
-.portfolioInner{
+.portfolioInner,
+.project,
+.resumeInner{
   width: 77vw;
   margin: 0 auto;
 }
@@ -63,7 +65,9 @@ body{
   .whatIDoInner,
   .skillsInner,
   .experienceInner,
-  .portfolioInner{
+  .portfolioInner,
+  .project,
+  .resumeInner{
     width: 80vw;
   }
 }
@@ -319,7 +323,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(./assets/images/bg2.jpg);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: color-burn;
   display: flex;
   flex-direction: column;
@@ -398,6 +402,126 @@ body{
 @media (min-width: 850px) {
   .skillsWrapper{
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* RESUME */
+.resume{
+  position: relative;
+  overflow: hidden;
+  height: 25vh;
+  background-image: url(./assets/images/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: color-burn;
+}
+
+.resumeInner{
+  position: relative;
+  z-index: 1;
+}
+
+.resumeBtn{
+  width: 170px;
+  margin: auto;
+}
+
+.resumeBtn > button{
+  outline: none;
+  width: 100%;
+  padding: .8em 1em;
+  background-color: transparent;
+  color: var(--clr-accent);
+  border: 1px solid var(--clr-accent);
+  border-radius: 5px;
+  transform: scale(1);
+  transition: ease-in-out .5s;
+}
+
+/* PORTFOLIO */
+.portfolio{
+  font-size: var(--fs-body);
+}
+
+.project > img{
+  width: 100%;
+}
+
+.project-links{
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.project-links > a{
+  text-decoration: none;
+  border: 1px solid var(--clr-accent);
+  border-radius: 8px;
+  padding: .3em .6em;
+  margin-left: auto;
+  color: var(--clr-accent);
+  transform: scale(1);
+  transition: ease-in-out .5s;
+}
+
+.project-links > a:hover,
+.project-links > a:focus,
+.resumeBtn > button:hover,
+.resumeBtn > button:focus{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.moreProjects{
+  background-color: var(--clr-accent);
+  margin: 1.5rem 0;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.moreProjects > a{
+  font-size: var(--fs-h3);
+  color: var(--clr-light);
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.moreProjects > a:hover,
+.moreProjects > a:focus{
+  cursor: pointer;
+}
+
+.githubIcon{
+  opacity: 0;
+  transition: opacity .01s;
+  position: relative;
+  right: 130px;
+}
+
+.moreProjects:hover .githubIcon{
+  opacity: 1;
+  align-self: center;
+}
+
+.moreProjects:hover .githubButton{
+  opacity: 0;
+}
+
+@media (min-width: 850px) {
+  .project-links{
+    width: 300px;
+  }
+
+  .githubIcon{
+    right: 150px;
   }
 }
 

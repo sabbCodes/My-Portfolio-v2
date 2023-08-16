@@ -1,17 +1,19 @@
 import React from 'react';
 
-const Project = ({ title, description, imageUrl, liveUrl, githubUrl }) => {
+function Project(props){
   return (
     <div className="project">
-      <img src={imageUrl} alt={title} />
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <h2>{props.title}</h2>
+      <img src={require(`../assets/project images/${props.img}`)} alt={props.title} />
+      <p>{props.description}</p>
       <div className="project-links">
-        <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-          Live Demo
-        </a>
-        <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-          GitHub
+        {props.isLive &&
+          <a href={props.liveUrl} target="_blank" rel="noopener noreferrer" className='liveDemo'>
+            Live Demo
+          </a>
+        }
+        <a href={props.githubUrl} target="_blank" rel="noopener noreferrer">
+          Source Code
         </a>
       </div>
     </div>

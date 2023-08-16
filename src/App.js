@@ -4,7 +4,7 @@ import Nav from './components/Nav';
 import AboutMe from './components/AboutMe';
 import WhatIDo from './components/WhatIDo';
 import Skills from './components/Skills';
-// import Experience from './components/Experience';
+import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Testimonial from './components/Testimonials';
 import Contact from './components/Contact';
@@ -21,7 +21,7 @@ function App() {
         <AboutMe />
         <WhatIDo />
         <Skills />
-        {/* <Experience /> */}
+        <Resume />
         <Portfolio />
         <Testimonial />
         <Contact />

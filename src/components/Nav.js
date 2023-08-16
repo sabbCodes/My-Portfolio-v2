@@ -18,7 +18,7 @@ function Nav(){
                 aria-label="toggle navigation"
                 onClick={handleNavOpen}
             >
-                <span class="hamburger"></span>
+                <span className="hamburger"></span>
             </button>
             <nav className={`navigation ${isNavOpen ? 'navigation-open' : ''}`}>
                 <ul className="nav__list">
