@@ -25,7 +25,7 @@ function Portfolio(){
     <section id='portfolio' className="portfolio">
       <div className='portfolioInner'>
         <AnimateOnScroll>
-          <h2>Portfolio</h2>
+          <h1>Portfolio</h1>
           <div className="projects">
             {projects}
           </div>

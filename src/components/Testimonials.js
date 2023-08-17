@@ -21,19 +21,22 @@ function Testimonial(){
   };
 
   return (
-    <section className="testimonial">
-      <AnimateOnScroll>
-        <div className="testimonial-slider-container">
-          <Slider {...settings}>
-            {testimonialData.map((testimonial, index) => (
-              <div key={index} className="testimonial-item">
-                <p>{testimonial.message}</p>
-                <p className="testimonial-name">- {testimonial.name}</p>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </AnimateOnScroll>
+    <section className="testimonial" id='testimonial'>
+      <div className='testimonialInner'>
+        <AnimateOnScroll>
+          <div className="testimonial-slider-container">
+            <h1>What People say about me</h1>
+            <Slider {...settings}>
+              {testimonialData.map((testimonial, index) => (
+                <div key={index} className="testimonial-item">
+                  <p>{testimonial.message}</p>
+                  <p className="testimonial-name">- {testimonial.name}</p>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </AnimateOnScroll>
+      </div>
     </section>
   );
 };

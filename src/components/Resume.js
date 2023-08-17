@@ -1,8 +1,9 @@
 import React from "react";
 import AnimateOnScroll from "./AnimateOnScroll";
+import ResumeLocation from "../assets/My Refactored Resume.pdf";
 
 function Resume(){
-    const resumePath = "../assets/My Refactored Resume.pdf";
+    const resumePath = ResumeLocation;
 
     const handleDownload = () => {
         const link = document.createElement('a');
@@ -15,16 +16,14 @@ function Resume(){
 
     return(
         <section id="resume" className="resume">
-            <AnimateOnScroll>
-                <div className="resumeInner">
-                    <AnimateOnScroll>
-                        <h1>My Resume</h1>
-                        <div className="resumeBtn">
-                            <button onClick={handleDownload}>Download My Resume</button>
-                        </div>
-                    </AnimateOnScroll>
-                </div>
-            </AnimateOnScroll>
+            <div className="resumeInner">
+                <AnimateOnScroll>
+                    <h1>My Resume</h1>
+                    <div className="resumeBtn">
+                        <button onClick={handleDownload}>Download My Resume</button>
+                    </div>
+                </AnimateOnScroll>
+            </div>
         </section>
     );
 };

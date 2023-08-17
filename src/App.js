@@ -8,6 +8,16 @@ import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Testimonial from './components/Testimonials';
 import Contact from './components/Contact';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faWhatsapp,
+  faGithub,
+  faLinkedin,
+  faTwitter,
+  faFacebook,
+  faMedium
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 
 function App() {
@@ -27,8 +37,48 @@ function App() {
         <Contact />
       </main>
       <footer>
-        <p>&copy; {new Date().getFullYear()} Sarafa Abbas</p>
-        <p>All rights reserved.</p>
+        <div className='footerInner'>
+          <div className='socials'>
+            <ul>
+              <li>
+                <a href='https://github.com/sabbCodes' target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} size="lg" />
+                </a>
+              </li>
+              <li>
+                <a href='https://twitter.com/0lanrewajuAbbas' target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faTwitter} size="lg" />
+                </a>
+              </li>
+              <li>
+                <a href='https://wa.link/07dbz2' target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faWhatsapp} size="lg" />
+                </a>
+              </li>
+              <li>
+                <a href='https://www.linkedin.com/in/abbas-sarafa-a76500244/' target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                </a>
+              </li>
+              <li>
+                <a href='https://web.facebook.com/abbas.sarafa.5/' target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faFacebook} size="lg" />
+                </a>
+              </li>
+              <li>
+                <a href='mailto:sarafaabbas@gmail.com' target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faEnvelope} size="lg" />
+                </a>
+              </li>
+              <li>
+                <a href='https://medium.com/@sarafaabbas' target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faMedium} size="lg" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p>&copy; {new Date().getFullYear()} Sarafa Abbas</p>
+        </div>
       </footer>
     </div>
   );
