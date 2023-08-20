@@ -288,7 +288,7 @@ body{
 .typewriter{
   font-family: var(--ff-secondary);
   font-size: 1.8rem;
-  background-image: linear-gradient(to right, #ade8f4, #0077b6);
+  background-image: var(--clr-light);
   background-clip: text;
   color: transparent;
 }
