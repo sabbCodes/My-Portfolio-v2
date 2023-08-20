@@ -5,11 +5,12 @@ import AnimateOnScroll from './AnimateOnScroll';
 function Home(){
   return (
     <section className="home" id='home'>
-      <div className="bg-animation"></div>
       <AnimateOnScroll>
         <div className="intro">
-            <h1 className='firstname'>Sarafa</h1>
-            <h1>Abbas</h1>
+            <div className='nameWrapper'>
+              <h1 className='firstname'>Sarafa</h1>
+              <h1>Abbas</h1>
+            </div>
             <div className='typewriter'>
               <Typewriter
                 options={{
@@ -35,6 +36,7 @@ function Home(){
             </div>
         </div>
       </AnimateOnScroll>
+      {/* <div className="bg-animation"></div> */}
     </section>
   );
 };

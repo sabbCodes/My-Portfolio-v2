@@ -8,11 +8,21 @@ function Project(props){
       <p>{props.description}</p>
       <div className="project-links">
         {props.isLive &&
-          <a href={props.liveUrl} target="_blank" rel="noopener noreferrer" className='liveDemo'>
+          <a
+            href={props.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className='portfolioLink'
+          >
             Live Demo
           </a>
         }
-        <a href={props.githubUrl} target="_blank" rel="noopener noreferrer">
+        <a
+          href={props.githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className='portfolioLink'
+        >
           Source Code
         </a>
       </div>
