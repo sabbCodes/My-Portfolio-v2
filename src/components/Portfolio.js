@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Project from './Project';
 import ProjectData from './ProjectData';
 import AnimateOnScroll from "./AnimateOnScroll";
@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Portfolio(){
+  const [isHovered, setIsHovered] = useState(false)
+
   const projects = ProjectData.map(item => {
     return (
       <Project
@@ -21,6 +23,14 @@ function Portfolio(){
     )
   })
 
+  function handleMouseEnter(){
+    setIsHovered(true)
+  }
+
+  function handleMouseLeave(){
+    setIsHovered(false)
+  }
+
   return (
     <section id='portfolio' className="portfolio">
       <div className='portfolioInner'>
@@ -31,13 +41,20 @@ function Portfolio(){
           </div>
         </AnimateOnScroll>
       </div>
-      <div className='moreProjects'>
-        <a className='githubButton' href='https://github.com/sabbCodes' target="_blank" rel='noopener noreferrer'>
-          See More Projects
-        </a>
-        <a className='githubIcon' href='https://github.com/sabbCodes' target="_blank" rel='noopener noreferrer'>
-          <FontAwesomeIcon icon={faGithub} size="3x" />
-        </a>
+      <div
+        className='moreProjects'
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {!isHovered ? (
+          <a href='https://github.com/sabbCodes' target="_blank" rel='noopener noreferrer'>
+            See More Projects
+          </a>
+        ) : (
+          <a href='https://github.com/sabbCodes' target="_blank" rel='noopener noreferrer'>
+            <FontAwesomeIcon icon={faGithub} size="3x" />
+          </a>
+        )}
       </div>
     </section>
   );
