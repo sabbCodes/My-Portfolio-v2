@@ -288,7 +288,7 @@ body{
 .typewriter{
   font-family: var(--ff-secondary);
   font-size: 1.8rem;
-  background-image: var(--clr-light);
+  background-image: var(--clr-accent);
   background-clip: text;
   color: transparent;
 }
