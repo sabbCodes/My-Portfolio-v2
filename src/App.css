@@ -384,8 +384,8 @@ body{
 }
 
 #myAvi{
-  height: 320px;
-  width: 320px;
+  height: 35vh;
+  width: 69vw;
   border-radius: 50%;
   box-shadow: var(--bs);
 }
@@ -556,7 +556,7 @@ body{
 }
 
 .resumeBtn{
-  width: 170px;
+  width: 200px;
   margin: 0 auto;
 }
 

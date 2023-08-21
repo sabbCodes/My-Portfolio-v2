@@ -20,7 +20,7 @@ function Resume(){
                 <AnimateOnScroll>
                     <h1>My Resume</h1>
                     <div className="resumeBtn">
-                        <button onClick={handleDownload}>Download My Resume</button>
+                        <button onClick={handleDownload}>DOWNLOAD MY RESUME</button>
                     </div>
                 </AnimateOnScroll>
             </div>
