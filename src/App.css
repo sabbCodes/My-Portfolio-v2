@@ -242,7 +242,6 @@ body{
   overflow: hidden;
   color: var(--clr-light);
   line-height: 1.2;
-  z-index: 999;
   background: url('./assets/images/backgroundImg.jpg') center/cover no-repeat;
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: color-burn;
@@ -256,7 +255,6 @@ body{
   align-items: center;
   font-size: var(--fs-h2);
   text-align: center;
-  z-index: 999;
 }
 
 .nameWrapper{
