@@ -160,6 +160,7 @@ body{
   width: 2em;
   height: 3px;
   border-radius: 1em;
+  z-index: 100;
   transition: transform 250ms ease-in-out;
 }
 
@@ -242,6 +243,7 @@ body{
   overflow: hidden;
   color: var(--clr-light);
   line-height: 1.2;
+  z-index: 99;
   background: url('./assets/images/backgroundImg.jpg') center/cover no-repeat;
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: color-burn;
@@ -255,6 +257,7 @@ body{
   align-items: center;
   font-size: var(--fs-h2);
   text-align: center;
+  z-index: 99;
 }
 
 .nameWrapper{
