@@ -24,15 +24,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Helmet>
-        <meta
-          name="description"
-          content="Sabb portfolio website"
-        />
-        <meta name="og:title" content="Abbas Portfolio website" />
-        <meta name="og:description" content="A portfolio website to showcase my skills as a Frontend Developer" />
-        <meta property='og:image' content='https://i.imgur.com/OcHCNPi.png' />
-      </Helmet>
       <header className="App-header">
         <Nav />
         <Home />
