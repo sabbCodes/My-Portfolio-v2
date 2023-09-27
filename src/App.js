@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <meta property='og:image' content='https://imgur.com/OcHCNPi.jpg' />
+        <meta property='og:image' content='https://i.imgur.com/OcHCNPi.jpg' />
       </Helmet>
       <header className="App-header">
         <Nav />
