@@ -14,7 +14,7 @@ function Portfolio(){
     setTimeout(() => {
       setProjects(ProjectData)
       setLoading(false)
-    }, 3000)
+    }, 5000)
   }, []);
 
   const projectsEl = projects.map(item => {
