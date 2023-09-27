@@ -36,7 +36,6 @@ function Home(){
             </div>
         </div>
       </AnimateOnScroll>
-      {/* <div className="bg-animation"></div> */}
     </section>
   );
 };

@@ -385,8 +385,8 @@ body{
 }
 
 #myAvi{
-  height: 35vh;
-  width: 69vw;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   box-shadow: var(--bs);
 }
@@ -628,6 +628,11 @@ body{
   background-color: var(--clr-accent);
   border: none;
   color: var(--clr-light);
+}
+
+.loader{
+  display: flex;
+  align-items: center;
 }
 
 .moreProjects{

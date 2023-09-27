@@ -1,18 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Project from './Project';
 import ProjectData from './ProjectData';
 import AnimateOnScroll from "./AnimateOnScroll";
-import uuid from 'react-uuid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Dna } from  'react-loader-spinner'
 
 function Portfolio(){
   const [isHovered, setIsHovered] = useState(false)
+  const [projects, setProjects] = useState([])
+  const [loading, setLoading] = useState(true)
 
-  const projects = ProjectData.map(item => {
+  useEffect(() => {
+    setTimeout(() => {
+      setProjects(ProjectData)
+      setLoading(false)
+    }, 3000)
+  }, []);
+
+  const projectsEl = projects.map(item => {
     return (
       <Project
-        key={uuid()}
+        key={item.id}
         title={item.title}
         description={item.description}
         img={item.img}
@@ -37,7 +46,18 @@ function Portfolio(){
         <AnimateOnScroll>
           <h1>Portfolio</h1>
           <div className="projects">
-            {projects}
+            {loading ? (
+              <div className='loader'>
+                <Dna
+                    visible={true}
+                    height="100"
+                    width="100"
+                    ariaLabel="dna-loading"
+                    wrapperClass="dna-wrapper"
+                />
+                <h3>Loading, Please wait...</h3>
+              </div>
+            ) : projectsEl}
           </div>
         </AnimateOnScroll>
       </div>
