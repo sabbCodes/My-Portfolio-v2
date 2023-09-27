@@ -19,14 +19,13 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Helmet } from 'react-helmet';
-import OgpImage from './assets/images/ogp-image.png'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Helmet>
-        <meta property='og:image' content={OgpImage} />
+        <meta property='og:image' content='https://drive.google.com/file/d/1RvmAUms01kF0MJEun6423xLE_hLyAbOQ/view?usp=sharing' />
       </Helmet>
       <header className="App-header">
         <Nav />
