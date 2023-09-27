@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <meta property='og:image' content='https://drive.google.com/file/d/1RvmAUms01kF0MJEun6423xLE_hLyAbOQ/view?usp=sharing' />
+        <meta property='og:image' content='https://drive.google.com/uc?export=download&id=1RvmAUms01kF0MJEun6423xLE_hLyAbOQ' />
       </Helmet>
       <header className="App-header">
         <Nav />
