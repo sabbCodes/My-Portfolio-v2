@@ -18,7 +18,6 @@ import {
   faMedium
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { Helmet } from 'react-helmet';
 import './App.css';
 
 function App() {
