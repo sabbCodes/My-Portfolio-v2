@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Project from './Project';
 import ProjectData from './ProjectData';
-import AnimateOnScroll from "./AnimateOnScroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Dna } from  'react-loader-spinner'
@@ -43,23 +42,21 @@ function Portfolio(){
   return (
     <section id='portfolio' className="portfolio">
       <div className='portfolioInner'>
-        <AnimateOnScroll>
-          <h1>Portfolio</h1>
-          <div className="projects">
-            {loading ? (
-              <div className='loader'>
-                <Dna
-                    visible={true}
-                    height="100"
-                    width="100"
-                    ariaLabel="dna-loading"
-                    wrapperClass="dna-wrapper"
-                />
-                <h3>Loading, Please wait...</h3>
-              </div>
-            ) : projectsEl}
-          </div>
-        </AnimateOnScroll>
+        <h1>Portfolio</h1>
+        <div className="projects">
+          {loading ? (
+            <div className='loader'>
+              <Dna
+                  visible={true}
+                  height="100"
+                  width="100"
+                  ariaLabel="dna-loading"
+                  wrapperClass="dna-wrapper"
+              />
+              <h3>Loading, Please wait...</h3>
+            </div>
+          ) : projectsEl}
+        </div>
       </div>
       <div
         className='moreProjects'
