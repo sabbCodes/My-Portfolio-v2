@@ -8,6 +8,8 @@ import Bootstrap from "../assets/skills images/bootstrap_2 1.png";
 import Typescript from "../assets/skills images/typescript_2 1.png";
 import Sass from "../assets/skills images/sass 1.png";
 import Tailwind from "../assets/skills images/R (4) 1.png";
+import Figma from "../assets/skills images/figma.jpeg";
+import Firebase from "../assets/skills images/firebase.png";
 
 function Skills(){
     return(
@@ -54,6 +56,16 @@ function Skills(){
                         <AnimateOnScroll>
                             <div className="skillImageContainer">
                                 <img src={Tailwind} alt="Tailwind icon"/>
+                            </div>
+                        </AnimateOnScroll>
+                        <AnimateOnScroll>
+                            <div className="skillImageContainer">
+                                <img src={Figma} alt="Figma icon"/>
+                            </div>
+                        </AnimateOnScroll>
+                        <AnimateOnScroll>
+                            <div className="skillImageContainer">
+                                <img src={Firebase} alt="Firebase icon"/>
                             </div>
                         </AnimateOnScroll>
                     </div>
