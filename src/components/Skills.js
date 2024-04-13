@@ -8,8 +8,9 @@ import Bootstrap from "../assets/skills images/bootstrap_2 1.png";
 import Typescript from "../assets/skills images/typescript_2 1.png";
 import Sass from "../assets/skills images/sass 1.png";
 import Tailwind from "../assets/skills images/R (4) 1.png";
-import Figma from "../assets/skills images/figma.png";
+import Figma from "../assets/skills images/figma-logo.png";
 import Firebase from "../assets/skills images/firebase.png";
+import Nextjs from "../assets/skills images/nextjs_logo.png";
 
 function Skills(){
     return(
@@ -66,6 +67,11 @@ function Skills(){
                         <AnimateOnScroll>
                             <div className="skillImageContainer">
                                 <img src={Firebase} alt="Firebase icon"/>
+                            </div>
+                        </AnimateOnScroll>
+                        <AnimateOnScroll>
+                            <div className="skillImageContainer">
+                                <img src={Nextjs} alt="Nextjs icon"/>
                             </div>
                         </AnimateOnScroll>
                     </div>
