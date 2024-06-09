@@ -1,6 +1,15 @@
 const projectData = [
   {
     id: 1,
+    title: 'medQuest',
+    description: 'A quiz application that aims to make learning easier for medical students across the globe. MedQuest app contains medical courses ranging from pre-clinical subjects like Anatomy, Biochemistry and physiology and clinical courses like Pathology, Pharmacology, Medical Microbiology among others. This was built with React - frontend, and Firebase - backend. The one thing that makes me happy about this project is how I was able to implement the signup, login, forgot password and email confirmation among others.',
+    img: 'medquest.jpg',
+    liveUrl: 'https://medquest.netlify.app/',
+    githubUrl: 'https://github.com/sabbCodes/quizApp',
+    isLive: true,
+  },
+  {
+    id: 2,
     title: 'ACME Dashboard',
     description: 'ACME Dashboard is a project from the Nextjs official website which has helped me learnt a lot about the library. The dashboard has the edit invoice, add and delete invoice functionality. Building this project helps me explore the power of using Nextjs for both frontend and backend development as I have learnt how to create, update, and delete items from my Database and the database itself. To login: email; user@nextmail.com password; 123456',
     img: 'acme.jpg',
@@ -9,7 +18,7 @@ const projectData = [
     isLive: true,
   },
   {
-    id: 2,
+    id: 3,
     title: 'Image Drag & Drop App',
     description: 'A site that shows a number of images with different tags, allows only users who have access to log in and be able to drag and drop the images at preferred location and having the grid items to be re-arranged. Also has "filter by tags" feature that lets users narrow down the number of displayed images to their input tags. Default email is "user@example.com" & password is "1Password".',
     img: 'image-site.jpg',
@@ -18,7 +27,7 @@ const projectData = [
     isLive: true,
   },
   {
-    id: 3,
+    id: 4,
     title: 'MovieBox App',
     description: 'A movie discovery App that loads top-rated movies from the TMDB API. Shows individual movie details in a separate component. Plays YouTube trailer of movies. Allows users to search and discover movies by title. Shows a spinner when loading data. In case of error while fetching data from API, it renders the error to the screen.',
     img: 'moviebox.jpg',
@@ -27,7 +36,7 @@ const projectData = [
     isLive: true,
   },
   {
-    id: 4,
+    id: 5,
     title: 'Tenzies Game',
     description: 'A React game app where user rolls dices to hold a value after every roll and wins when every dice have the same value. Has a feature to display number of rolls it takes to win the game. Alerts user when they hold dices with different values. Animated such that the dices roll when Roll Dice button is clicked. Designed to have real dice faces instead of just showing numbers. Loads a confetti animation upon winning the game. Shows popup notification when user wins the game.',
     img: 'tenzies.jpg',
@@ -36,7 +45,7 @@ const projectData = [
     isLive: true,
   },
   {
-    id: 5,
+    id: 6,
     title: 'Mumeen Dasboard',
     description: 'A chrome extension dashboard that sets background image to random muslim images and shows random Quran verses and their translations. Also show weather status based on user location.',
     img: 'mumeen-dashboard.png',

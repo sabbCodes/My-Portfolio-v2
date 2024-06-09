@@ -22,7 +22,7 @@ function AboutMe(){
                 <div className="aboutMeText">
                     <AnimateOnScroll>
                         <p>
-                            <span className="lighten">I'm a third-year medical student at Bayero University in Kano, Nigeria.</span> I have a passion for both medicine and programming, and I'm enthusiastic about creating projects that have broad utility.
+                            <span className="lighten">I'm a fourth-year medical student at Bayero University in Kano, Nigeria.</span> I have a passion for both medicine and programming, and I'm enthusiastic about creating projects that have broad utility.
                             My experience spans from basic static web pages to intricate multi-page websites with interactive features. I'm dedicated to ensuring user-friendly accessibility and crafting intuitive, easy-to-use interfaces in my applications, always going the extra mile.
                         </p>
                     </AnimateOnScroll>

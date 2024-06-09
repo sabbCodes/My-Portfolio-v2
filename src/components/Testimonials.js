@@ -11,7 +11,21 @@ function Testimonial(){
 
   useEffect(() => {
     const testimonialData = [
-      { name: 'Client 1', message: 'Testimonial message 1' },
+      {
+        name: 'Sumayya Hassan MD',
+        message: `
+          Hiiiii
+          Just checked the link and it was superb! Really really cool! It baffled me to see that degree of skillfulness!!!
+
+          I loved the little pop-ups when I either get it correct or wrong. Encouraging and a little witty. Super cool!
+
+          One thing though...if the correct answer could be shown in green when one gets the answer wrong, that way one'd learn, or at least come to a realisation of a preexisting knowledge. 
+
+          May Allah bless your skills and knowledge, increase in your capacity and open for you a zillion doors you never knew existed
+
+          That's tremendously impressive 👍🏽
+        `
+      },
       { name: 'Client 2', message: 'Testimonial message 2' },
       { name: 'Client 3', message: 'Testimonial message 3' },
     ];
